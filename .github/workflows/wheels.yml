@@ -20,7 +20,7 @@ jobs:
       matrix:
         include:
           # Windows (TODO check if actually works)
-          - os: windows
+          - os: windows-latest
             python: 3.8
             python_id: cp38
             platform_id: win_amd64
