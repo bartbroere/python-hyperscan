@@ -40,11 +40,6 @@ jobs:
         run: |
           pdm install -G build -G release --no-self --no-lock -v
 
-      - name: Increment version
-        id: semantic-version
-        run: |
-          echo "version=$(pdm run semantic-release version --no-commit 2>/dev/null)" >> "$GITHUB_OUTPUT"
-
       - name: Restore build artifacts cache
         id: cache-dist
         uses: actions/cache@v3
