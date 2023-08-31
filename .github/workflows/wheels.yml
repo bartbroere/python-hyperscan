@@ -13,7 +13,7 @@ jobs:
   build_wheels:
     name: ${{ matrix.python_id }}-${{ matrix.platform_id }} wheel
     runs-on: ${{ matrix.os }}
-    if: github.repository == 'darvid/python-hyperscan'
+    # if: github.repository == 'darvid/python-hyperscan'
 
     strategy:
       fail-fast: false
