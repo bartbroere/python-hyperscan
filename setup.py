@@ -32,9 +32,6 @@ def _pkgconfig_get_libdir(lib):
 
 
 def get_platform_specific_options():
-    if sys.platform == "win32":
-        raise RuntimeError("win32 not currently supported")
-
     hs_cflags = _pkgconfig_get_cflags("libhs")
     pcre_libdir = _pkgconfig_get_libdir("libpcre")
     hs_libdir = _pkgconfig_get_libdir("libhs")
