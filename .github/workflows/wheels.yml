@@ -19,7 +19,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # TODO: Windows support
+          # Windows (TODO check if actually works)
+          - os: windows
+            python: 3.8
+            python_id: cp38
+            platform_id: win_amd64
+            
           # Linux 64 bit manylinux2014
           - os: ubuntu-latest
             python: 3.8
